@@ -52,7 +52,7 @@ function calcularPrecioConDescuento() {
   }
 
   console.log({
-    coupon, 
+    coupon,
     discount,
     couponInArray,
     couponsList,
