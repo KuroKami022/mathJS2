@@ -2,11 +2,17 @@
 function calcMedia(array){
     // sum all array elements then divide them between the number of elements//
 
-    let arraySum = 0;
+    // let arraySum = 0;
 
-    for (let i = 0; i < array.length; i++) {
-        arraySum = arraySum + array[i];
+    // for (let i = 0; i < array.length; i++) {
+    //     arraySum = arraySum + array[i];
+    // }
+
+    function sumElements(acummulatedValue, newValue){
+        return acummulatedValue + newValue;
     }
+
+    const arraySum = array.reduce(sumElements);
 
     const media = arraySum / array.length;
     console.log(media);
